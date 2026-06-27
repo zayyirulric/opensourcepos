@@ -26,8 +26,7 @@ services:
     ports:
       - "0.0.0.0:80:80"
     volumes:
-      - ./pos_data/uploads:/app/writable/uploads
-      - ./pos_data/logs:/app/writable/logs
+      - ./writable:/app/writable
     environment:
       - CI_ENVIRONMENT=production
       - FORCE_HTTPS=false
